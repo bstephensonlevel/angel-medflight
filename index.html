@@ -1,1525 +1,2055 @@
+o
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medical Flights Available 24/7 | Angel MedFlight</title>
-<meta name="description" content="Safe medical flights for patients in urgent need. ICU-equipped jets, insurance coordination, bedside-to-bedside service. Call (877) 239-1122.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
-<style>
-/* ═══════════════════════════════════════
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Discharge Air Transport — Get Your Loved One Home Safely | Angel MedFlight</title>
+  <meta name="description"
+    content="When the hospital says your loved one can't fly commercial, we coordinate everything. NAAMTA-accredited air ambulance, insurance handled, ICU-level care. Call (855) 440-1496.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ═══════════════════════════════════════
    ANGEL MEDFLIGHT — PAID SEARCH LP
    Brand tokens + conversion architecture
    ═══════════════════════════════════════ */
 
-:root {
-  --amf-navy: #0C1821;
-  --amf-navy-90: #162432;
-  --amf-blue: #1B6CB5;
-  --amf-blue-hover: #155A96;
-  --amf-blue-light: #E8F1FA;
-  --amf-blue-glow: rgba(27, 108, 181, 0.12);
-  --amf-white: #FFFFFF;
-  --amf-off-white: #F7F8FA;
-  --amf-gray-100: #EEF0F3;
-  --amf-gray-200: #D8DCE2;
-  --amf-gray-400: #8B929D;
-  --amf-gray-600: #5A6170;
-  --amf-gray-800: #2A2F38;
-  --amf-gold: #D4A843;
-  --amf-gold-light: #FFF8E7;
-  --amf-green: #1A8754;
-  --amf-green-light: #E8F5EE;
-  --amf-red-light: #FFF1F0;
-  --amf-font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --amf-max-w: 1140px;
-  --amf-radius: 10px;
-  --amf-radius-lg: 16px;
-  --amf-shadow-sm: 0 1px 3px rgba(12,24,33,0.06);
-  --amf-shadow-md: 0 4px 16px rgba(12,24,33,0.08);
-  --amf-shadow-lg: 0 8px 32px rgba(12,24,33,0.10);
-  --amf-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
+    :root {
+      --amf-navy: #0C1821;
+      --amf-navy-90: #162432;
+      --amf-blue: #1B6CB5;
+      --amf-blue-hover: #155A96;
+      --amf-blue-light: #E8F1FA;
+      --amf-blue-glow: rgba(27, 108, 181, 0.12);
+      --amf-white: #FFFFFF;
+      --amf-off-white: #F7F8FA;
+      --amf-gray-100: #EEF0F3;
+      --amf-gray-200: #D8DCE2;
+      --amf-gray-400: #8B929D;
+      --amf-gray-600: #5A6170;
+      --amf-gray-800: #2A2F38;
+      --amf-gold: #D4A843;
+      --amf-gold-light: #FFF8E7;
+      --amf-green: #1A8754;
+      --amf-green-light: #E8F5EE;
+      --amf-red-light: #FFF1F0;
+      --amf-font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --amf-max-w: 1140px;
+      --amf-radius: 10px;
+      --amf-radius-lg: 16px;
+      --amf-shadow-sm: 0 1px 3px rgba(12, 24, 33, 0.06);
+      --amf-shadow-md: 0 4px 16px rgba(12, 24, 33, 0.08);
+      --amf-shadow-lg: 0 8px 32px rgba(12, 24, 33, 0.10);
+      --amf-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
 
-body {
-  font-family: var(--amf-font);
-  font-size: 16px;
-  line-height: 1.65;
-  color: var(--amf-gray-800);
-  background: var(--amf-white);
-  -webkit-font-smoothing: antialiased;
-}
+    body {
+      font-family: var(--amf-font);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--amf-gray-800);
+      background: var(--amf-white);
+      -webkit-font-smoothing: antialiased;
+    }
 
-img { max-width: 100%; height: auto; display: block; }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-a { color: var(--amf-blue); text-decoration: none; }
+    a {
+      color: var(--amf-blue);
+      text-decoration: none;
+    }
 
-.container {
-  max-width: var(--amf-max-w);
-  margin: 0 auto;
-  padding: 0 24px;
-}
+    .container {
+      max-width: var(--amf-max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-/* ─── STICKY HEADER ─── */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--amf-navy);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 68px;
-}
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.header-logo svg { height: 32px; width: auto; }
-.header-logo-text {
-  color: var(--amf-white);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  line-height: 1.1;
-}
-.header-logo-text span {
-  display: block;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  color: var(--amf-gray-400);
-  text-transform: uppercase;
-  margin-top: 1px;
-}
-.header-right { display: flex; align-items: center; gap: 16px; }
-.header-avail {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--amf-gray-400);
-  font-size: 12px;
-  font-weight: 500;
-}
-.header-avail .pulse {
-  width: 7px; height: 7px;
-  background: #34D399;
-  border-radius: 50%;
-  animation: pulse-dot 2s ease-in-out infinite;
-}
-@keyframes pulse-dot {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0.5); }
-  50% { box-shadow: 0 0 0 5px rgba(52,211,153,0); }
-}
-.btn-phone {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--amf-blue);
-  color: var(--amf-white);
-  font-family: var(--amf-font);
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: background var(--amf-transition);
-  text-decoration: none;
-}
-.btn-phone:hover { background: var(--amf-blue-hover); }
-.btn-phone svg { width: 16px; height: 16px; flex-shrink: 0; }
+    /* ─── STICKY HEADER ─── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--amf-white);
+      border-bottom: 1px solid var(--amf-gray-200);
+      box-shadow: var(--amf-shadow-sm);
+    }
 
-/* ─── HERO ─── */
-.hero {
-  background: var(--amf-navy);
-  padding: 56px 0 64px;
-  position: relative;
-  overflow: hidden;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(135deg, transparent 0%, rgba(27,108,181,0.06) 100%);
-  pointer-events: none;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(27,108,181,0.15);
-  color: #6DB3F2;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 5px 14px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-  letter-spacing: 0.03em;
-}
-.hero-badge svg { width: 14px; height: 14px; }
-.hero h1 {
-  font-size: clamp(30px, 4vw, 44px);
-  font-weight: 700;
-  line-height: 1.15;
-  color: var(--amf-white);
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
-}
-.hero h1 em {
-  font-style: normal;
-  color: #6DB3F2;
-}
-.hero-sub {
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--amf-gray-400);
-  margin-bottom: 28px;
-  max-width: 520px;
-}
-.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--amf-blue);
-  color: var(--amf-white);
-  font-family: var(--amf-font);
-  font-size: 15px;
-  font-weight: 600;
-  padding: 14px 28px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: all var(--amf-transition);
-  text-decoration: none;
-}
-.btn-primary:hover { background: var(--amf-blue-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(27,108,181,0.3); }
-.btn-primary svg { width: 18px; height: 18px; }
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  color: var(--amf-white);
-  font-family: var(--amf-font);
-  font-size: 15px;
-  font-weight: 500;
-  padding: 14px 28px;
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.2);
-  cursor: pointer;
-  transition: all var(--amf-transition);
-  text-decoration: none;
-}
-.btn-secondary:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.05); }
-.hero-proof {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-top: 4px;
-}
-.hero-stars { display: flex; gap: 2px; }
-.hero-stars svg { width: 16px; height: 16px; color: var(--amf-gold); }
-.hero-proof-text {
-  font-size: 13px;
-  color: var(--amf-gray-400);
-  line-height: 1.3;
-}
-.hero-proof-text strong { color: var(--amf-white); font-weight: 600; }
-.hero-image {
-  position: relative;
-  border-radius: var(--amf-radius-lg);
-  overflow: hidden;
-  aspect-ratio: 4/3;
-  background: var(--amf-navy-90);
-}
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero-image-overlay {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  padding: 16px 20px;
-  background: linear-gradient(transparent, rgba(12,24,33,0.85));
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.hero-image-overlay .icon-shield {
-  width: 36px; height: 36px;
-  background: rgba(27,108,181,0.3);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.hero-image-overlay .icon-shield svg { width: 18px; height: 18px; color: #6DB3F2; }
-.hero-image-overlay p {
-  font-size: 13px;
-  color: rgba(255,255,255,0.85);
-  font-weight: 500;
-  line-height: 1.3;
-}
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
 
-/* ─── STATS BAR ─── */
-.stats-bar {
-  background: var(--amf-white);
-  border-bottom: 1px solid var(--amf-gray-100);
-  padding: 32px 0;
-}
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
-  text-align: center;
-}
-.stat-item { padding: 8px 4px; }
-.stat-num {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--amf-navy);
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-}
-.stat-label {
-  font-size: 13px;
-  color: var(--amf-gray-600);
-  margin-top: 4px;
-  font-weight: 400;
-}
-.stat-divider {
-  width: 1px;
-  background: var(--amf-gray-200);
-  height: 48px;
-  margin: auto;
-}
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-/* ─── TRUST BADGES ─── */
-.trust-badges {
-  background: var(--amf-off-white);
-  padding: 24px 0;
-  border-bottom: 1px solid var(--amf-gray-100);
-}
-.badges-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-.badge-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.badge-icon {
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: var(--amf-white);
-  border: 1px solid var(--amf-gray-200);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.badge-icon svg { width: 20px; height: 20px; color: var(--amf-blue); }
-.badge-text {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--amf-gray-800);
-  line-height: 1.3;
-}
-.badge-text span {
-  display: block;
-  font-weight: 400;
-  color: var(--amf-gray-600);
-  font-size: 11px;
-}
+    .header-logo-img {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
 
-/* ─── SECTION SHARED ─── */
-.section {
-  padding: 72px 0;
-}
-.section-alt { background: var(--amf-off-white); }
-.section-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--amf-blue);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 12px;
-}
-.section-label svg { width: 16px; height: 16px; }
-.section-title {
-  font-size: clamp(24px, 3vw, 34px);
-  font-weight: 700;
-  color: var(--amf-navy);
-  line-height: 1.2;
-  margin-bottom: 12px;
-  letter-spacing: -0.01em;
-}
-.section-desc {
-  font-size: 16px;
-  color: var(--amf-gray-600);
-  max-width: 560px;
-  line-height: 1.65;
-}
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
 
-/* ─── HOW IT WORKS ─── */
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 40px;
-}
-.step-card {
-  text-align: center;
-  padding: 28px 16px;
-  background: var(--amf-white);
-  border-radius: var(--amf-radius);
-  border: 1px solid var(--amf-gray-100);
-  position: relative;
-  transition: all var(--amf-transition);
-}
-.step-card:hover { border-color: var(--amf-blue); box-shadow: var(--amf-shadow-md); transform: translateY(-2px); }
-.step-num {
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  background: var(--amf-blue-light);
-  color: var(--amf-blue);
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 14px;
-}
-.step-card h3 {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--amf-navy);
-  margin-bottom: 6px;
-  line-height: 1.3;
-}
-.step-card p {
-  font-size: 13px;
-  color: var(--amf-gray-600);
-  line-height: 1.5;
-}
-.step-connector {
-  display: none;
-  position: absolute;
-  top: 46px;
-  right: -16px;
-  color: var(--amf-gray-200);
-}
+    .header-avail {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--amf-gray-600);
+      font-size: 1rem;
+      font-weight: 500;
+    }
 
-/* ─── DIFFERENTIATORS ─── */
-.diff-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 40px;
-}
-.diff-card {
-  display: flex;
-  gap: 16px;
-  padding: 24px;
-  background: var(--amf-white);
-  border-radius: var(--amf-radius);
-  border: 1px solid var(--amf-gray-100);
-  transition: all var(--amf-transition);
-}
-.diff-card:hover { border-color: var(--amf-blue); box-shadow: var(--amf-shadow-sm); }
-.diff-icon {
-  width: 44px; height: 44px;
-  border-radius: 10px;
-  background: var(--amf-blue-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.diff-icon svg { width: 22px; height: 22px; color: var(--amf-blue); }
-.diff-card h3 {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--amf-navy);
-  margin-bottom: 4px;
-}
-.diff-card p {
-  font-size: 14px;
-  color: var(--amf-gray-600);
-  line-height: 1.5;
-}
+    .header-avail .pulse {
+      width: 7px;
+      height: 7px;
+      background: #34D399;
+      border-radius: 50%;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
 
-/* ─── REVIEWS ─── */
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 36px;
-}
-.review-card {
-  background: var(--amf-white);
-  border: 1px solid var(--amf-gray-100);
-  border-radius: var(--amf-radius);
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  transition: all var(--amf-transition);
-}
-.review-card:hover { box-shadow: var(--amf-shadow-md); transform: translateY(-2px); }
-.review-stars { display: flex; gap: 2px; margin-bottom: 12px; }
-.review-stars svg { width: 16px; height: 16px; color: var(--amf-gold); }
-.review-text {
-  font-size: 14px;
-  color: var(--amf-gray-800);
-  line-height: 1.6;
-  font-style: italic;
-  flex-grow: 1;
-  margin-bottom: 16px;
-}
-.review-author {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-top: 1px solid var(--amf-gray-100);
-  padding-top: 14px;
-}
-.review-avatar {
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  background: var(--amf-blue-light);
-  color: var(--amf-blue);
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.review-meta strong {
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--amf-navy);
-}
-.review-meta span {
-  font-size: 12px;
-  color: var(--amf-gray-400);
-}
+    @keyframes pulse-dot {
 
-/* ─── INSURANCE SECTION ─── */
-.insurance-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 48px;
-  align-items: center;
-  margin-top: 36px;
-}
-.insurance-list { list-style: none; margin: 20px 0 24px; }
-.insurance-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 8px 0;
-  font-size: 15px;
-  color: var(--amf-gray-800);
-}
-.insurance-list li svg {
-  width: 20px; height: 20px;
-  color: var(--amf-green);
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-.insurance-highlight {
-  background: var(--amf-blue-light);
-  border-left: 3px solid var(--amf-blue);
-  padding: 16px 20px;
-  border-radius: 0 8px 8px 0;
-  margin-bottom: 24px;
-}
-.insurance-highlight p {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--amf-navy);
-  line-height: 1.5;
-}
-.insurance-image {
-  border-radius: var(--amf-radius-lg);
-  overflow: hidden;
-  aspect-ratio: 4/3;
-  background: var(--amf-gray-100);
-  position: relative;
-}
-.insurance-image img { width: 100%; height: 100%; object-fit: cover; }
-.insurance-image-badge {
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-  background: var(--amf-white);
-  border-radius: 8px;
-  padding: 10px 14px;
-  box-shadow: var(--amf-shadow-md);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.insurance-image-badge svg { width: 20px; height: 20px; color: var(--amf-green); }
-.insurance-image-badge span {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--amf-navy);
-}
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5);
+      }
 
-/* ─── FORM SECTION ─── */
-.form-section {
-  background: var(--amf-navy);
-  padding: 72px 0;
-  position: relative;
-  overflow: hidden;
-}
-.form-section::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(27,108,181,0.08) 0%, transparent 70%);
-  pointer-events: none;
-}
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  align-items: start;
-  position: relative;
-  z-index: 1;
-}
-.form-left h2 {
-  font-size: clamp(26px, 3vw, 36px);
-  font-weight: 700;
-  color: var(--amf-white);
-  line-height: 1.2;
-  margin-bottom: 16px;
-  letter-spacing: -0.01em;
-}
-.form-left > p {
-  font-size: 16px;
-  color: var(--amf-gray-400);
-  line-height: 1.6;
-  margin-bottom: 32px;
-}
-.form-reassurance { list-style: none; }
-.form-reassurance li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  font-size: 14px;
-  color: rgba(255,255,255,0.7);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.form-reassurance li:last-child { border-bottom: none; }
-.form-reassurance li svg { width: 20px; height: 20px; color: #34D399; flex-shrink: 0; }
-.form-card {
-  background: var(--amf-white);
-  border-radius: var(--amf-radius-lg);
-  padding: 36px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-}
-.form-card h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--amf-navy);
-  margin-bottom: 4px;
-}
-.form-card > p {
-  font-size: 14px;
-  color: var(--amf-gray-600);
-  margin-bottom: 24px;
-}
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-.form-group { margin-bottom: 12px; }
-.form-group label {
-  display: block;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--amf-gray-800);
-  margin-bottom: 5px;
-}
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  font-family: var(--amf-font);
-  font-size: 14px;
-  color: var(--amf-gray-800);
-  padding: 11px 14px;
-  border: 1px solid var(--amf-gray-200);
-  border-radius: 8px;
-  background: var(--amf-white);
-  transition: border-color var(--amf-transition), box-shadow var(--amf-transition);
-  outline: none;
-}
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-color: var(--amf-blue);
-  box-shadow: 0 0 0 3px var(--amf-blue-glow);
-}
-.form-group textarea { resize: vertical; min-height: 72px; }
-.btn-submit {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: var(--amf-blue);
-  color: var(--amf-white);
-  font-family: var(--amf-font);
-  font-size: 16px;
-  font-weight: 600;
-  padding: 14px 24px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: all var(--amf-transition);
-  margin-top: 8px;
-}
-.btn-submit:hover { background: var(--amf-blue-hover); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(27,108,181,0.3); }
-.form-security {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 14px;
-  font-size: 12px;
-  color: var(--amf-gray-400);
-}
-.form-security svg { width: 14px; height: 14px; }
-.form-or {
-  text-align: center;
-  font-size: 13px;
-  color: var(--amf-gray-400);
-  margin-top: 16px;
-}
-.form-or a {
-  color: var(--amf-blue);
-  font-weight: 600;
-}
+      50% {
+        box-shadow: 0 0 0 5px rgba(52, 211, 153, 0);
+      }
+    }
 
-/* ─── CONDITIONS ─── */
-.conditions-wrap { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
-.condition-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 9px 18px;
-  background: var(--amf-white);
-  border: 1px solid var(--amf-gray-200);
-  border-radius: 100px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--amf-gray-800);
-  transition: all var(--amf-transition);
-  cursor: default;
-}
-.condition-pill:hover { border-color: var(--amf-blue); color: var(--amf-blue); background: var(--amf-blue-light); }
-.condition-pill svg { width: 16px; height: 16px; color: var(--amf-blue); }
+    .btn-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amf-blue);
+      color: var(--amf-white);
+      font-family: var(--amf-font);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background var(--amf-transition);
+      text-decoration: none;
+    }
 
-/* ─── FAQ ─── */
-.faq-list { margin-top: 36px; max-width: 740px; }
-.faq-item {
-  border: 1px solid var(--amf-gray-100);
-  border-radius: var(--amf-radius);
-  margin-bottom: 10px;
-  overflow: hidden;
-  background: var(--amf-white);
-  transition: all var(--amf-transition);
-}
-.faq-item.active { border-color: var(--amf-blue); box-shadow: var(--amf-shadow-sm); }
-.faq-q {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 22px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--amf-navy);
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  font-family: var(--amf-font);
-  transition: color var(--amf-transition);
-}
-.faq-q:hover { color: var(--amf-blue); }
-.faq-q svg {
-  width: 20px; height: 20px;
-  color: var(--amf-gray-400);
-  transition: transform 0.3s ease;
-  flex-shrink: 0;
-}
-.faq-item.active .faq-q svg { transform: rotate(180deg); color: var(--amf-blue); }
-.faq-a {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease;
-}
-.faq-a-inner {
-  padding: 0 22px 20px;
-  font-size: 14px;
-  color: var(--amf-gray-600);
-  line-height: 1.65;
-}
+    .btn-phone:hover {
+      background: var(--amf-blue-hover);
+    }
 
-/* ─── FINAL CTA BAR ─── */
-.final-cta {
-  background: var(--amf-off-white);
-  border-top: 1px solid var(--amf-gray-100);
-  border-bottom: 1px solid var(--amf-gray-100);
-  padding: 36px 0;
-}
-.final-cta-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.final-cta h3 {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--amf-navy);
-}
-.final-cta p {
-  font-size: 14px;
-  color: var(--amf-gray-600);
-}
-.final-cta-btns { display: flex; gap: 12px; flex-shrink: 0; }
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  color: var(--amf-blue);
-  font-family: var(--amf-font);
-  font-size: 15px;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1.5px solid var(--amf-blue);
-  cursor: pointer;
-  transition: all var(--amf-transition);
-  text-decoration: none;
-}
-.btn-outline:hover { background: var(--amf-blue-light); }
+    .btn-phone svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
 
-/* ─── FOOTER ─── */
-.footer {
-  background: var(--amf-navy);
-  padding: 28px 0;
-}
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.footer p {
-  font-size: 12px;
-  color: var(--amf-gray-400);
-}
-.footer a {
-  font-size: 12px;
-  color: var(--amf-gray-400);
-  transition: color var(--amf-transition);
-}
-.footer a:hover { color: var(--amf-white); }
-.footer-links { display: flex; gap: 20px; }
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--amf-navy);
+      padding: 56px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* ─── SCROLL ANIMATIONS ─── */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(135deg, transparent 0%, rgba(27, 108, 181, 0.06) 100%);
+      pointer-events: none;
+    }
 
-/* ─── RESPONSIVE ─── */
-@media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
-  .hero-image { max-width: 500px; }
-  .stats-grid { grid-template-columns: repeat(3, 1fr); }
-  .stats-grid .stat-item:nth-child(n+4) { display: none; }
-  .steps-grid { grid-template-columns: 1fr 1fr; }
-  .diff-grid { grid-template-columns: 1fr; }
-  .reviews-grid { grid-template-columns: 1fr; max-width: 460px; }
-  .insurance-grid { grid-template-columns: 1fr; }
-  .insurance-image { max-width: 460px; }
-  .form-grid { grid-template-columns: 1fr; gap: 36px; }
-  .badges-inner { gap: 24px; }
-}
-@media (max-width: 600px) {
-  .header-avail { display: none; }
-  .btn-phone span.desktop { display: none; }
-  .hero { padding: 36px 0 44px; }
-  .section { padding: 48px 0; }
-  .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; }
-  .stat-num { font-size: 24px; }
-  .steps-grid { grid-template-columns: 1fr; max-width: 360px; }
-  .form-row { grid-template-columns: 1fr; }
-  .form-card { padding: 24px; }
-  .final-cta-inner { flex-direction: column; text-align: center; }
-  .final-cta-btns { width: 100%; flex-direction: column; }
-  .final-cta-btns a, .final-cta-btns button { width: 100%; justify-content: center; }
-  .badges-inner { gap: 16px; }
-  .badge-text { display: none; }
-}
-</style>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(27, 108, 181, 0.15);
+      color: #6DB3F2;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-badge svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--amf-white);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: #6DB3F2;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--amf-gray-400);
+      margin-bottom: 28px;
+      max-width: 520px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amf-blue);
+      color: var(--amf-white);
+      font-family: var(--amf-font);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all var(--amf-transition);
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--amf-blue-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(27, 108, 181, 0.3);
+    }
+
+    .btn-primary svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--amf-white);
+      font-family: var(--amf-font);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: all var(--amf-transition);
+      text-decoration: none;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-proof {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 4px;
+    }
+
+    .hero-stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .hero-stars svg {
+      width: 16px;
+      height: 16px;
+      color: var(--amf-gold);
+    }
+
+    .hero-proof-text {
+      font-size: 1rem;
+      color: var(--amf-gray-400);
+      line-height: 1.3;
+    }
+
+    .hero-proof-text strong {
+      color: var(--amf-white);
+      font-weight: 600;
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: var(--amf-radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--amf-navy-90);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 20px;
+      background: linear-gradient(transparent, rgba(12, 24, 33, 0.85));
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-image-overlay .icon-shield {
+      width: 36px;
+      height: 36px;
+      background: rgba(27, 108, 181, 0.3);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .hero-image-overlay .icon-shield svg {
+      width: 18px;
+      height: 18px;
+      color: #6DB3F2;
+    }
+
+    .hero-image-overlay p {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      background: var(--amf-white);
+      border-bottom: 1px solid var(--amf-gray-100);
+      padding: 32px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 8px 4px;
+    }
+
+    .stat-num {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--amf-navy);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: var(--amf-gray-600);
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+    .stat-divider {
+      width: 1px;
+      background: var(--amf-gray-200);
+      height: 48px;
+      margin: auto;
+    }
+
+    /* ─── TRUST BADGES ─── */
+    .trust-badges {
+      background: var(--amf-off-white);
+      padding: 24px 0;
+      border-bottom: 1px solid var(--amf-gray-100);
+    }
+
+    .badges-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .badge-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .badge-item img {
+      height: 72px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* ─── SECTION SHARED ─── */
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-alt {
+      background: var(--amf-off-white);
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--amf-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .section-label svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 700;
+      color: var(--amf-navy);
+      line-height: 1.2;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      color: var(--amf-gray-600);
+      max-width: 560px;
+      line-height: 1.65;
+    }
+
+    /* ─── HOW IT WORKS ─── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .step-card {
+      text-align: center;
+      padding: 28px 16px;
+      background: var(--amf-white);
+      border-radius: var(--amf-radius);
+      border: 1px solid var(--amf-gray-100);
+      position: relative;
+      transition: all var(--amf-transition);
+    }
+
+    .step-card:hover {
+      border-color: var(--amf-blue);
+      box-shadow: var(--amf-shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .step-num {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--amf-blue-light);
+      color: var(--amf-blue);
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+    }
+
+    .step-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--amf-navy);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .step-card p {
+      font-size: 1rem;
+      color: var(--amf-gray-600);
+      line-height: 1.5;
+    }
+
+    .step-connector {
+      display: none;
+      position: absolute;
+      top: 46px;
+      right: -16px;
+      color: var(--amf-gray-200);
+    }
+
+    /* ─── DIFFERENTIATORS ─── */
+    .diff-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .diff-card {
+      display: flex;
+      gap: 16px;
+      padding: 24px;
+      background: var(--amf-white);
+      border-radius: var(--amf-radius);
+      border: 1px solid var(--amf-gray-100);
+      transition: all var(--amf-transition);
+    }
+
+    .diff-card:hover {
+      border-color: var(--amf-blue);
+      box-shadow: var(--amf-shadow-sm);
+    }
+
+    .diff-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--amf-blue-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .diff-icon svg {
+      width: 22px;
+      height: 22px;
+      color: var(--amf-blue);
+    }
+
+    .diff-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--amf-navy);
+      margin-bottom: 4px;
+    }
+
+    .diff-card p {
+      font-size: 1rem;
+      color: var(--amf-gray-600);
+      line-height: 1.5;
+    }
+
+    /* ─── REVIEWS ─── */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 36px;
+    }
+
+    .review-card {
+      background: var(--amf-white);
+      border: 1px solid var(--amf-gray-100);
+      border-radius: var(--amf-radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--amf-transition);
+    }
+
+    .review-card:hover {
+      box-shadow: var(--amf-shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 12px;
+    }
+
+    .review-stars svg {
+      width: 16px;
+      height: 16px;
+      color: var(--amf-gold);
+    }
+
+    .review-text {
+      font-size: 1rem;
+      color: var(--amf-gray-800);
+      line-height: 1.6;
+      font-style: italic;
+      flex-grow: 1;
+      margin-bottom: 16px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid var(--amf-gray-100);
+      padding-top: 14px;
+    }
+
+    .review-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--amf-blue-light);
+      color: var(--amf-blue);
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .review-meta strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--amf-navy);
+    }
+
+    .review-meta span {
+      font-size: 1rem;
+      color: var(--amf-gray-400);
+    }
+
+    /* ─── INSURANCE SECTION ─── */
+    .insurance-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+      margin-top: 36px;
+    }
+
+    .insurance-list {
+      list-style: none;
+      margin: 20px 0 24px;
+    }
+
+    .insurance-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 1rem;
+      color: var(--amf-gray-800);
+    }
+
+    .insurance-list li svg {
+      width: 20px;
+      height: 20px;
+      color: var(--amf-green);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .insurance-highlight {
+      background: var(--amf-blue-light);
+      border-left: 3px solid var(--amf-blue);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 24px;
+    }
+
+    .insurance-highlight p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--amf-navy);
+      line-height: 1.5;
+    }
+
+    .insurance-image {
+      border-radius: var(--amf-radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--amf-gray-100);
+      position: relative;
+    }
+
+    .insurance-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .insurance-image-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: var(--amf-white);
+      border-radius: 8px;
+      padding: 10px 14px;
+      box-shadow: var(--amf-shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .insurance-image-badge svg {
+      width: 20px;
+      height: 20px;
+      color: var(--amf-green);
+    }
+
+    .insurance-image-badge span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--amf-navy);
+    }
+
+    /* ─── FORM SECTION ─── */
+    .form-section {
+      background: var(--amf-navy);
+      padding: 72px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(27, 108, 181, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-left h2 {
+      font-size: clamp(26px, 3vw, 36px);
+      font-weight: 700;
+      color: var(--amf-white);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .form-left>p {
+      font-size: 16px;
+      color: var(--amf-gray-400);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .form-reassurance {
+      list-style: none;
+    }
+
+    .form-reassurance li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .form-reassurance li:last-child {
+      border-bottom: none;
+    }
+
+    .form-reassurance li svg {
+      width: 20px;
+      height: 20px;
+      color: #34D399;
+      flex-shrink: 0;
+    }
+
+    .form-card {
+      background: var(--amf-white);
+      border-radius: var(--amf-radius-lg);
+      padding: 36px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .form-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--amf-navy);
+      margin-bottom: 4px;
+    }
+
+    .form-card>p {
+      font-size: 1rem;
+      color: var(--amf-gray-600);
+      margin-bottom: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--amf-gray-800);
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      font-family: var(--amf-font);
+      font-size: 1rem;
+      color: var(--amf-gray-800);
+      padding: 11px 14px;
+      border: 1px solid var(--amf-gray-200);
+      border-radius: 8px;
+      background: var(--amf-white);
+      transition: border-color var(--amf-transition), box-shadow var(--amf-transition);
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--amf-blue);
+      box-shadow: 0 0 0 3px var(--amf-blue-glow);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 72px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--amf-blue);
+      color: var(--amf-white);
+      font-family: var(--amf-font);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 24px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all var(--amf-transition);
+      margin-top: 8px;
+    }
+
+    .btn-submit:hover {
+      background: var(--amf-blue-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(27, 108, 181, 0.3);
+    }
+
+    .form-security {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 14px;
+      font-size: 1rem;
+      color: var(--amf-gray-400);
+    }
+
+    .form-security svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .form-or {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--amf-gray-400);
+      margin-top: 16px;
+    }
+
+    .form-or a {
+      color: var(--amf-blue);
+      font-weight: 600;
+    }
+
+    /* ─── CONDITIONS ─── */
+    .conditions-wrap {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .condition-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      background: var(--amf-white);
+      border: 1px solid var(--amf-gray-200);
+      border-radius: 100px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--amf-gray-800);
+      transition: all var(--amf-transition);
+      cursor: default;
+    }
+
+    .condition-pill:hover {
+      border-color: var(--amf-blue);
+      color: var(--amf-blue);
+      background: var(--amf-blue-light);
+    }
+
+    .condition-pill svg {
+      width: 16px;
+      height: 16px;
+      color: var(--amf-blue);
+    }
+
+    /* ─── FAQ ─── */
+    .faq-list {
+      margin-top: 36px;
+      max-width: 740px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--amf-gray-100);
+      border-radius: var(--amf-radius);
+      margin-bottom: 10px;
+      overflow: hidden;
+      background: var(--amf-white);
+      transition: all var(--amf-transition);
+    }
+
+    .faq-item.active {
+      border-color: var(--amf-blue);
+      box-shadow: var(--amf-shadow-sm);
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 22px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--amf-navy);
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: var(--amf-font);
+      transition: color var(--amf-transition);
+    }
+
+    .faq-q:hover {
+      color: var(--amf-blue);
+    }
+
+    .faq-q svg {
+      width: 20px;
+      height: 20px;
+      color: var(--amf-gray-400);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.active .faq-q svg {
+      transform: rotate(180deg);
+      color: var(--amf-blue);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .faq-a-inner {
+      padding: 0 22px 20px;
+      font-size: 1rem;
+      color: var(--amf-gray-600);
+      line-height: 1.65;
+    }
+
+    /* ─── FINAL CTA BAR ─── */
+    .final-cta {
+      background: var(--amf-off-white);
+      border-top: 1px solid var(--amf-gray-100);
+      border-bottom: 1px solid var(--amf-gray-100);
+      padding: 36px 0;
+    }
+
+    .final-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .final-cta h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--amf-navy);
+    }
+
+    .final-cta p {
+      font-size: 1rem;
+      color: var(--amf-gray-600);
+    }
+
+    .final-cta-btns {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--amf-blue);
+      font-family: var(--amf-font);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: 1.5px solid var(--amf-blue);
+      cursor: pointer;
+      transition: all var(--amf-transition);
+      text-decoration: none;
+    }
+
+    .btn-outline:hover {
+      background: var(--amf-blue-light);
+    }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      background: var(--amf-navy);
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer p {
+      font-size: 1rem;
+      color: var(--amf-gray-400);
+    }
+
+    .footer a {
+      font-size: 1rem;
+      color: var(--amf-gray-400);
+      transition: color var(--amf-transition);
+    }
+
+    .footer a:hover {
+      color: var(--amf-white);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* ─── SCROLL ANIMATIONS ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .hero-image {
+        max-width: 500px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .stats-grid .stat-item:nth-child(n+4) {
+        display: none;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .diff-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reviews-grid {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+      }
+
+      .insurance-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insurance-image {
+        max-width: 460px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .badges-inner {
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-avail {
+        display: none;
+      }
+
+      .btn-phone span.desktop {
+        display: none;
+      }
+
+      .hero {
+        padding: 36px 0 44px;
+      }
+
+      .section {
+        padding: 48px 0;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+      }
+
+      .stat-num {
+        font-size: 24px;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-card {
+        padding: 24px;
+      }
+
+      .final-cta-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .final-cta-btns {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .final-cta-btns a,
+      .final-cta-btns button {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .badges-inner {
+        gap: 16px;
+      }
+
+      .badge-item img {
+        height: 52px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ══════════════════ HEADER ══════════════════ -->
-<header class="header">
-  <div class="container header-inner">
-    <a href="#" class="header-logo">
-      <!-- Wing icon -->
-      <svg viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 0C14 6 4 10 0 12c6 2 14 6 18 12 0-6 1-12 2-16 1 4 2 10 2 16C26 18 34 14 40 12c-4-2-14-6-20-12z" fill="#6DB3F2"/>
-        <path d="M20 24c-1 4-1.5 8-1 12 .5-4 1-8 1-12z" fill="#1B6CB5"/>
-      </svg>
-      <div class="header-logo-text">
-        Angel MedFlight
-        <span>Air Ambulance Services</span>
-      </div>
-    </a>
-    <div class="header-right">
-      <div class="header-avail">
-        <div class="pulse"></div>
-        Available 24/7
-      </div>
-      <a href="tel:877-239-1122" class="btn-phone">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span class="desktop">(877) 239-1122</span>
-        <span class="mobile" style="display:none">Call Now</span>
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="header-logo">
+        <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c1402_amf_horizontal_logo_fc_bw.avif" alt="Angel MedFlight Air Ambulance Services" class="header-logo-img">
       </a>
-    </div>
-  </div>
-</header>
-
-<!-- ══════════════════ HERO ══════════════════ -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Largest U.S. long-distance medical flight program
+      <div class="header-right">
+        <div class="header-avail">
+          <div class="pulse"></div>
+          Available 24/7
         </div>
-        <h1>Safe medical flights for patients in <em>urgent need</em></h1>
-        <p class="hero-sub">ICU-equipped air ambulance service with bedside-to-bedside coordination. Our team handles logistics, insurance, and in-flight critical care so you don't have to.</p>
-        <div class="hero-ctas">
-          <a href="tel:877-239-1122" class="btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call now — 24/7 support
-          </a>
-          <a href="#request-form" class="btn-secondary">
-            Request a flight
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-          </a>
-        </div>
-        <div class="hero-proof">
-          <div class="hero-stars">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="hero-proof-text"><strong>Highest-rated</strong> U.S. air ambulance &middot; 35,000+ transports</p>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c13e1_Homepage-Slider-3-3%20(1).avif" alt="Angel MedFlight crew standing beside medical jet on tarmac" loading="eager">
-        <div class="hero-image-overlay">
-          <div class="icon-shield">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <p>NAAMTA-accredited &middot; CFRN & FP-C certified flight crews</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ STATS BAR ══════════════════ -->
-<div class="stats-bar reveal">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-num">35K+</div>
-        <div class="stat-label">Completed transports</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">50</div>
-        <div class="stat-label">U.S. states served</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">40+</div>
-        <div class="stat-label">Countries reached</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">15</div>
-        <div class="stat-label">Fleet of medical jets</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">Since '07</div>
-        <div class="stat-label">Years of operations</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════ TRUST BADGES ══════════════════ -->
-<div class="trust-badges reveal">
-  <div class="container">
-    <div class="badges-inner">
-      <div class="badge-item">
-        <div class="badge-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div class="badge-text">NAAMTA Accredited<span>Air Medical Transport</span></div>
-      </div>
-      <div class="badge-item">
-        <div class="badge-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        </div>
-        <div class="badge-text">CFRN Certified<span>Flight Registered Nurses</span></div>
-      </div>
-      <div class="badge-item">
-        <div class="badge-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
-        </div>
-        <div class="badge-text">FP-C Certified<span>Flight Paramedics</span></div>
-      </div>
-      <div class="badge-item">
-        <div class="badge-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-        </div>
-        <div class="badge-text">NBRC Credentialed<span>Respiratory Therapists</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══════════════════ HOW IT WORKS ══════════════════ -->
-<section class="section reveal">
-  <div class="container">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-      Simple process
-    </div>
-    <h2 class="section-title">How to request a medical flight</h2>
-    <p class="section-desc">We make the complex simple. From your first call to wheels up, our team manages every detail.</p>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-num">1</div>
-        <h3>Call or submit form</h3>
-        <p>Reach our flight coordination team 24/7. We'll assess the situation and discuss options immediately.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">2</div>
-        <h3>We handle everything</h3>
-        <p>Insurance authorization, medical records, facility coordination, and transport logistics — all managed by our team.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">3</div>
-        <h3>Patient flies safely</h3>
-        <p>Certified flight nurses and paramedics provide ICU-level care throughout the entire journey.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">4</div>
-        <h3>Bedside to bedside</h3>
-        <p>Ground transport included on both ends. We pick up at the sending facility and deliver to the receiving one.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ DIFFERENTIATORS ══════════════════ -->
-<section class="section section-alt reveal">
-  <div class="container">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      Why Angel MedFlight
-    </div>
-    <h2 class="section-title">What sets us apart</h2>
-    <p class="section-desc">Families, hospitals, and case managers choose Angel MedFlight for a reason.</p>
-    <div class="diff-grid">
-      <div class="diff-card">
-        <div class="diff-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-        </div>
-        <div>
-          <h3>Insurance specialists on staff</h3>
-          <p>We research your benefits, handle authorization paperwork, and coordinate payment with your health plan. Many families discover their insurance covers the flight.</p>
-        </div>
-      </div>
-      <div class="diff-card">
-        <div class="diff-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        </div>
-        <div>
-          <h3>ICU-equipped medical jets</h3>
-          <p>Every aircraft in our 15-jet fleet is outfitted with intensive care capabilities. Our flight crews hold CFRN and FP-C certifications.</p>
-        </div>
-      </div>
-      <div class="diff-card">
-        <div class="diff-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <div>
-          <h3>Largest U.S. long-distance program</h3>
-          <p>50 states, 40+ countries, 7,000+ hospitals served. No flight is too far or too complex for our operations team to coordinate.</p>
-        </div>
-      </div>
-      <div class="diff-card">
-        <div class="diff-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
-        <div>
-          <h3>Bedside-to-bedside coordination</h3>
-          <p>We manage the complete journey — ground ambulance on both ends, air transfer, facility communication, and real-time family updates throughout.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ SOCIAL PROOF ══════════════════ -->
-<section class="section reveal">
-  <div class="container">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--amf-gold)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      Patient stories
-    </div>
-    <h2 class="section-title">Trusted by families across the country</h2>
-    <p class="section-desc">Highest-rated U.S. air ambulance company. Here's what patients and families say about their experience.</p>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="review-text">"AngelMed handled everything with grace, compassion and urgency. I called on a Tuesday. By Thursday my father was in the air. Bedside to bedside service during a very difficult time."</p>
-        <div class="review-author">
-          <div class="review-avatar">KD</div>
-          <div class="review-meta">
-            <strong>K. D.</strong>
-            <span>Family member &middot; Cardiac transport</span>
-          </div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="review-text">"From start to finish, their team was compassionate, professional, and incredibly reassuring. In a season filled with fear and uncertainty, Angel MedFlight gave us peace of mind."</p>
-        <div class="review-author">
-          <div class="review-avatar">LA</div>
-          <div class="review-meta">
-            <strong>L. A.</strong>
-            <span>Family member &middot; Pediatric transport</span>
-          </div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <p class="review-text">"My coworkers and I escorted 3 patients on separate flights. We were beyond impressed with the quality of door-to-door service. Friendly, calm, efficient, and patient with complex needs."</p>
-        <div class="review-author">
-          <div class="review-avatar">KH</div>
-          <div class="review-meta">
-            <strong>K. H.</strong>
-            <span>Healthcare professional &middot; Multi-patient</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ INSURANCE ══════════════════ -->
-<section class="section section-alt reveal">
-  <div class="container">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-      Insurance coverage
-    </div>
-    <h2 class="section-title">Your insurance may cover this flight</h2>
-    <p class="section-desc">We've worked with more than 5,000 health insurance companies to secure coverage for medically necessary flights.</p>
-    <div class="insurance-grid">
-      <div>
-        <ul class="insurance-list">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            We research the patient's specific flight benefits
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            Review policy fine print to confirm eligibility
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            Handle the entire flight authorization process
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            Coordinate payment directly with the health plan
-          </li>
-        </ul>
-        <div class="insurance-highlight">
-          <p>Many patients are surprised to learn that their insurance covers medically necessary flights. Call us to check your coverage — there's no cost or obligation.</p>
-        </div>
-        <a href="tel:877-239-1122" class="btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Check your coverage — (877) 239-1122
+        <a href="tel:855-440-1496" class="btn-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span class="desktop">(855) 440-1496</span>
+          <span class="mobile" style="display:none">Call Now</span>
         </a>
       </div>
-      <div class="insurance-image">
-        <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c13ef_250710_AMF_135660_FC-NR.avif" alt="Angel MedFlight insurance coordinator reviewing patient coverage" loading="lazy">
-        <div class="insurance-image-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-          <span>5,000+ insurers</span>
+    </div>
+  </header>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            Hospital discharge transport specialists
+          </div>
+          <h1>The hospital says they can't fly commercial. <em>We'll get them home safely.</em></h1>
+          <p class="hero-sub">You have a tight discharge window and a patient who needs medical care throughout transport. We coordinate everything — hospital discharge handoff, insurance authorization, and bedside-to-bedside ICU-level care — so you can focus on your family.</p>
+          <div class="hero-ctas">
+            <a href="tel:855-440-1496" class="btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Call now — 24/7 support
+            </a>
+            <a href="#request-form" class="btn-secondary">
+              Request a flight
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" style="width:16px;height:16px">
+                <path d="M7 17l9.2-9.2M17 17V7H7" />
+              </svg>
+            </a>
+          </div>
+          <div class="hero-proof">
+            <div class="hero-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="hero-proof-text"><strong>Highest-rated</strong> U.S. air ambulance &middot; 35,000+ families helped home</p>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c13e1_Homepage-Slider-3-3%20(1).avif"
+            alt="Angel MedFlight crew standing beside medical jet on tarmac" loading="eager">
+          <div class="hero-image-overlay">
+            <div class="icon-shield">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4" />
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <p>NAAMTA-accredited &middot; Trusted by families &amp; hospital discharge teams nationwide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ STATS BAR ══════════════════ -->
+  <div class="stats-bar reveal">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">35K+</div>
+          <div class="stat-label">Families helped home</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">7K+</div>
+          <div class="stat-label">Hospital partners</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5K+</div>
+          <div class="stat-label">Insurers worked with</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">15</div>
+          <div class="stat-label">ICU-equipped medical jets</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Since '07</div>
+          <div class="stat-label">Years of operations</div>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ══════════════════ FORM SECTION ══════════════════ -->
-<section class="form-section reveal" id="request-form">
-  <div class="container">
-    <div class="form-grid">
-      <div class="form-left">
-        <h2>Request a medical flight</h2>
-        <p>Fill out the form and our flight coordination team will call you within 15 minutes. Or call us directly at <a href="tel:877-239-1122" style="color:#6DB3F2;font-weight:600">(877) 239-1122</a>.</p>
-        <ul class="form-reassurance">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Flight coordinators available 24/7/365
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-            Insurance benefits checked at no cost
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            NAAMTA-accredited operations
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            ICU-level in-flight medical care
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            Domestic and international flights
-          </li>
-        </ul>
+  <!-- ══════════════════ TRUST BADGES ══════════════════ -->
+  <div class="trust-badges reveal">
+    <div class="container">
+      <div class="badges-inner">
+        <div class="badge-item">
+          <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c1406_NAAMTA_logo.avif" alt="NAAMTA Accredited">
+        </div>
+        <div class="badge-item">
+          <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c13e8_CFRN-Seal-Logo-RGB-150x150.avif" alt="CFRN Certified Flight Registered Nurse">
+        </div>
+        <div class="badge-item">
+          <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c13b7_image%202.avif" alt="FP-C Certified Flight Paramedic">
+        </div>
+        <div class="badge-item">
+          <img src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c145b_nbrc_digital_badge_720%201.avif" alt="NBRC Credentialed Respiratory Therapists">
+        </div>
       </div>
-      <div class="form-card">
-        <h3>Get a callback</h3>
-        <p>We respond within 15 minutes — day or night.</p>
-        <form id="flight-form" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First name *</label>
-              <input type="text" id="fname" name="fname" required placeholder="First name">
-            </div>
-            <div class="form-group">
-              <label for="lname">Last name *</label>
-              <input type="text" id="lname" name="lname" required placeholder="Last name">
+    </div>
+  </div>
+
+  <!-- ══════════════════ HOW IT WORKS ══════════════════ -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </svg>
+        Getting your loved one home
+      </div>
+      <h2 class="section-title">How hospital discharge transport works</h2>
+      <p class="section-desc">We're built for tight discharge timelines. From your first call to arrival at the destination, our team manages every step.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Call — we respond in minutes</h3>
+          <p>One call reaches our flight coordination team, 24/7. We assess the situation and outline options immediately — even at 2am.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>We work with the hospital</h3>
+          <p>Our team contacts the discharge planner directly — obtaining medical records, confirming transfer requirements, and handling insurance authorization. You don't manage that communication.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Your loved one flies safely</h3>
+          <p>Certified flight nurses and paramedics provide ICU-level monitoring throughout the entire flight — the same level of care they had in the hospital.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Delivered to the destination</h3>
+          <p>Ground transport on both ends. We pick up at the discharging hospital and deliver directly to the receiving facility or home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ DIFFERENTIATORS ══════════════════ -->
+  <section class="section section-alt reveal">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        Why families choose us
+      </div>
+      <h2 class="section-title">What matters most when discharge is urgent</h2>
+      <p class="section-desc">When you have 24–72 hours to arrange transport, you need a provider that's credible, fast, and medically prepared.</p>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="5" width="20" height="14" rx="2" />
+              <path d="M2 10h20" />
+            </svg>
+          </div>
+          <div>
+            <h3>Insurance specialists on staff</h3>
+            <p>We research your loved one's specific flight benefits, handle all authorization paperwork, and coordinate payment directly with the health plan. Many families are surprised to learn the flight is covered.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <div>
+            <h3>ICU-level care in the air</h3>
+            <p>Every aircraft is outfitted with intensive care equipment. Our CFRN and FP-C certified crews provide the same level of monitoring your loved one had in the hospital — from takeoff to landing.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Familiar with hospital discharge systems</h3>
+            <p>We coordinate directly with discharge planners, case managers, and receiving facilities. We've partnered with 7,000+ hospitals — we know how this process works and how to move quickly through it.</p>
+          </div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div>
+            <h3>Fast response, tight timelines</h3>
+            <p>Our coordinators are available 24/7 and mobilize immediately. Discharge windows don't wait — and neither do we. In urgent situations, we can have transport arranged within hours of your first call.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ SOCIAL PROOF ══════════════════ -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--amf-gold)">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+        Family stories
+      </div>
+      <h2 class="section-title">Families who needed to get a loved one home</h2>
+      <p class="section-desc">Highest-rated U.S. air ambulance company. Here's what families say about navigating discharge transport with our help.</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="review-text">"Angel MedFlight handled everything with grace, compassion, and urgency. I called on a Tuesday. By Thursday my father was in the air. Bedside to bedside service during a very difficult time."</p>
+          <div class="review-author">
+            <div class="review-avatar">KD</div>
+            <div class="review-meta">
+              <strong>K. D.</strong>
+              <span>Spouse &middot; Post-surgical hospital discharge</span>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required placeholder="you@email.com">
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="review-text">"From start to finish, their team was compassionate, professional, and incredibly reassuring. In a season filled with fear and uncertainty, Angel MedFlight gave us peace of mind."</p>
+          <div class="review-author">
+            <div class="review-avatar">LA</div>
+            <div class="review-meta">
+              <strong>L. A.</strong>
+              <span>Family member &middot; Patient transport</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="review-text">"My coworkers and I escorted 3 patients on separate flights. We were beyond impressed with the quality of door-to-door service. Friendly, calm, efficient, and patient with complex needs."</p>
+          <div class="review-author">
+            <div class="review-avatar">KH</div>
+            <div class="review-meta">
+              <strong>K. H.</strong>
+              <span>Healthcare professional &middot; Multi-patient transport</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ INSURANCE ══════════════════ -->
+  <section class="section section-alt reveal">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="5" width="20" height="14" rx="2" />
+          <path d="M2 10h20" />
+        </svg>
+        Insurance coverage
+      </div>
+      <h2 class="section-title">Your insurance may cover this flight</h2>
+      <p class="section-desc">Families arranging hospital discharge transport are often surprised to find their plan covers medically necessary flights. We handle the entire process — at no cost to you.</p>
+      <div class="insurance-grid">
+        <div>
+          <ul class="insurance-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              We research your loved one's specific flight benefits
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Review policy fine print to confirm medical necessity eligibility
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Handle the entire prior authorization process
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Coordinate payment directly with the health plan — you don't manage the billing
+            </li>
+          </ul>
+          <div class="insurance-highlight">
+            <p>You're dealing with enough right now. We verify your coverage, handle the paperwork, and don't charge you to find out. One call is all it takes.</p>
+          </div>
+          <a href="tel:855-440-1496" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Check your coverage — (855) 440-1496
+          </a>
+        </div>
+        <div class="insurance-image">
+          <img
+            src="https://cdn.prod.website-files.com/6908d0aa52962f780f3c111f/6908d0aa52962f780f3c13ef_250710_AMF_135660_FC-NR.avif"
+            alt="Angel MedFlight insurance coordinator reviewing patient coverage" loading="lazy">
+          <div class="insurance-image-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+            <span>5,000+ insurers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FORM SECTION ══════════════════ -->
+  <section class="form-section reveal" id="request-form">
+    <div class="container">
+      <div class="form-grid">
+        <div class="form-left">
+          <h2>Discharge is coming. We're ready when you are.</h2>
+          <p>Fill out the form and a flight coordinator will call you within 15 minutes. Or call us directly at
+            <a href="tel:855-440-1496" style="color:#6DB3F2;font-weight:600">(855) 440-1496</a>.</p>
+          <ul class="form-reassurance">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Flight coordinators available 24/7/365
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <path d="M2 10h20" />
+              </svg>
+              Insurance benefits verified at no cost
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              NAAMTA-accredited — the highest air medical standard
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+              ICU-level in-flight medical care throughout
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" /><path d="M9 12l2 2 4-4" />
+              </svg>
+              We coordinate directly with hospital discharge teams
+            </li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h3>Get a callback in 15 minutes</h3>
+          <p>We respond immediately — day or night. No obligation.</p>
+          <form id="flight-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First name *</label>
+                <input type="text" id="fname" name="fname" required placeholder="First name">
+              </div>
+              <div class="form-group">
+                <label for="lname">Last name *</label>
+                <input type="text" id="lname" name="lname" required placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="you@email.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+              </div>
             </div>
             <div class="form-group">
-              <label for="phone">Phone *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+              <label for="diagnosis">Patient diagnosis / condition *</label>
+              <input type="text" id="diagnosis" name="diagnosis" required
+                placeholder="e.g. Post-surgical, stroke, cardiac event, spinal injury">
             </div>
+            <div class="form-group">
+              <label for="details">Additional details (optional)</label>
+              <textarea id="details" name="details"
+                placeholder="Discharging hospital, destination, discharge timeline, insurance provider, etc."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              Request a callback
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" style="width:18px;height:18px">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </form>
+          <div class="form-security">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            Your information is secure and will never be shared.
           </div>
-          <div class="form-group">
-            <label for="diagnosis">Patient diagnosis / condition *</label>
-            <input type="text" id="diagnosis" name="diagnosis" required placeholder="e.g. Spinal cord injury, cardiac event">
+          <div class="form-or">
+            Prefer to call? <a href="tel:855-440-1496">(855) 440-1496</a> — available 24/7
           </div>
-          <div class="form-group">
-            <label for="details">Additional details (optional)</label>
-            <textarea id="details" name="details" placeholder="Current facility, destination, timing, insurance provider, etc."></textarea>
-          </div>
-          <button type="submit" class="btn-submit">
-            Request a callback
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CONDITIONS ══════════════════ -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+        </svg>
+        Medical expertise
+      </div>
+      <h2 class="section-title">We transport patients of all acuity levels</h2>
+      <p class="section-desc">From post-surgical recovery to complex critical care, our certified flight crews are equipped to manage a wide range of conditions throughout transport.</p>
+      <div class="conditions-wrap">
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg>
+          Spinal cord injury
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M12 2a9 9 0 0 0-9 9c0 3.87 2.13 7.25 5.28 9.03L12 22l3.72-1.97A9.96 9.96 0 0 0 21 11a9 9 0 0 0-9-9z" />
+          </svg>
+          Traumatic brain injury
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg>
+          Stroke
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.78.77L12 20.65l7.65-7.65.77-.77a5.4 5.4 0 0 0 0-7.65z" />
+          </svg>
+          Cardiac
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <ellipse cx="12" cy="12" rx="3" ry="8" />
+            <ellipse cx="12" cy="12" rx="8" ry="3" />
+          </svg>
+          Pulmonary
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Organ transplant
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12h8M12 8v8" />
+          </svg>
+          Cancer
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+          </svg>
+          Eating disorders
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+          </svg>
+          Autism
+        </div>
+        <div class="condition-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 16v-4M12 8h.01" />
+          </svg>
+          General trauma
+        </div>
+        <div class="condition-pill"
+          style="background:var(--amf-blue-light);border-color:var(--amf-blue);color:var(--amf-blue)">
+          + many more conditions
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FAQ ══════════════════ -->
+  <section class="section section-alt reveal">
+    <div class="container">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4M12 8h.01" />
+        </svg>
+        Common questions
+      </div>
+      <h2 class="section-title">Questions families ask when arranging discharge transport</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How quickly can you coordinate transport after hospital discharge?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
           </button>
-        </form>
-        <div class="form-security">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Your information is secure and will never be shared.
+          <div class="faq-a">
+            <div class="faq-a-inner">In most cases, we can have a flight arranged within 24 hours of your first call — often same day in urgent situations. Our team operates 24/7 and immediately begins working on logistics, insurance authorization, and hospital coordination as soon as you contact us. The exact timeline depends on the patient's condition, distance, and facility readiness.</div>
+          </div>
         </div>
-        <div class="form-or">
-          Prefer to call? <a href="tel:877-239-1122">(877) 239-1122</a> — available 24/7
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Will you work directly with the hospital discharge planner?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Yes — that's one of the first calls we make. Our coordinators contact the hospital discharge team directly to obtain medical records, confirm transfer requirements, align on timing, and coordinate with the receiving facility. You don't have to manage that communication on your own.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Does insurance cover medically necessary discharge transport?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Many insurance plans cover medically necessary air ambulance transport. We have dedicated insurance specialists who research your specific benefits, handle the prior authorization process, and coordinate payment with your health plan — at no additional cost to you. We've worked with over 5,000 insurance companies.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I fly with my spouse or parent during transport?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">In many cases, yes. Depending on the aircraft configuration and your loved one's medical needs, you can accompany them during transport. Many families find this reassuring. Our flight coordinators will confirm this when arranging the transport.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What happens on the day of the flight?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">Our ground transport team arrives at the hospital to safely move your loved one to the aircraft. The flight medical crew assumes care and provides ICU-level monitoring throughout the entire flight. Upon landing, a second ground team transports the patient directly to the receiving facility — bedside to bedside. You'll receive updates throughout the journey.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ FINAL CTA ══════════════════ -->
+  <div class="final-cta reveal">
+    <div class="container">
+      <div class="final-cta-inner">
+        <div>
+          <h3>Discharge is coming. We're ready when you need us.</h3>
+          <p>Our flight coordination team is standing by 24/7 — call now or request a callback.</p>
+        </div>
+        <div class="final-cta-btns">
+          <a href="tel:855-440-1496" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" style="width:18px;height:18px">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Call (855) 440-1496
+          </a>
+          <a href="#request-form" class="btn-outline">
+            Request a flight
+          </a>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ══════════════════ CONDITIONS ══════════════════ -->
-<section class="section reveal">
-  <div class="container">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-      Medical expertise
-    </div>
-    <h2 class="section-title">Conditions we transport</h2>
-    <p class="section-desc">Our flight crews are trained to manage a wide range of critical and complex medical conditions during transport.</p>
-    <div class="conditions-wrap">
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        Spinal cord injury
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a9 9 0 0 0-9 9c0 3.87 2.13 7.25 5.28 9.03L12 22l3.72-1.97A9.96 9.96 0 0 0 21 11a9 9 0 0 0-9-9z"/></svg>
-        Traumatic brain injury
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        Stroke
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.78.77L12 20.65l7.65-7.65.77-.77a5.4 5.4 0 0 0 0-7.65z"/></svg>
-        Cardiac
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="3" ry="8"/><ellipse cx="12" cy="12" rx="8" ry="3"/></svg>
-        Pulmonary
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Organ transplant
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
-        Cancer
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-        Eating disorders
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-        Autism
-      </div>
-      <div class="condition-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-        General trauma
-      </div>
-      <div class="condition-pill" style="background:var(--amf-blue-light);border-color:var(--amf-blue);color:var(--amf-blue)">
-        + many more conditions
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; 2026 Angel MedFlight. All rights reserved. Aviation West Charters dba Angel MedFlight.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ══════════════════ FAQ ══════════════════ -->
-<section class="section section-alt reveal">
-  <div class="container">
-    <div class="section-label">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-      Common questions
-    </div>
-    <h2 class="section-title">Frequently asked questions</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          How quickly can you arrange a medical flight?
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">In urgent situations, we can coordinate a medical flight within hours. Our team operates 24/7 and immediately begins working on logistics, insurance authorization, and medical coordination as soon as you call. The exact timeline depends on the patient's condition, distance, and facility readiness.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Does insurance cover medical flights?
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Many insurance plans cover medically necessary air ambulance transport. We have dedicated insurance specialists who research your specific benefits, handle the authorization process, and coordinate payment with your health plan at no additional cost. We've worked with over 5,000 insurance companies.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          What medical staff are on the flight?
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Every flight includes a team of certified critical care professionals — typically a Certified Flight Registered Nurse (CFRN) and a Flight Paramedic Certified (FP-C) specialist. Our crews hold advanced certifications in cardiac life support, pediatric care, and respiratory therapy.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Can a family member fly with the patient?
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">In many cases, yes. Depending on the aircraft configuration and the patient's medical needs, a family member or companion can accompany the patient during transport. Our flight coordinators will discuss this with you when arranging the flight.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          What happens on the day of the flight?
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Our ground transport team arrives at the sending facility to safely move the patient to the aircraft. The flight medical crew assumes care and monitors the patient throughout the flight with ICU-level equipment. Upon landing, another ground team transports the patient to the receiving facility — bedside to bedside.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- ══════════════════ SCRIPTS ══════════════════ -->
+  <script>
+    // FAQ Accordion
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-a');
+      const isActive = item.classList.contains('active');
 
-<!-- ══════════════════ FINAL CTA ══════════════════ -->
-<div class="final-cta reveal">
-  <div class="container">
-    <div class="final-cta-inner">
-      <div>
-        <h3>Ready when you are — 24/7</h3>
-        <p>Our flight coordination team is standing by to help.</p>
-      </div>
-      <div class="final-cta-btns">
-        <a href="tel:877-239-1122" class="btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Call (877) 239-1122
-        </a>
-        <a href="#request-form" class="btn-outline">
-          Request a flight
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.faq-a').style.maxHeight = null;
+      });
 
-<!-- ══════════════════ FOOTER ══════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <p>&copy; 2026 Angel MedFlight. All rights reserved. Aviation West Charters dba Angel MedFlight.</p>
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms &amp; Conditions</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- ══════════════════ SCRIPTS ══════════════════ -->
-<script>
-// FAQ Accordion
-function toggleFaq(btn) {
-  const item = btn.parentElement;
-  const answer = item.querySelector('.faq-a');
-  const isActive = item.classList.contains('active');
-  
-  // Close all
-  document.querySelectorAll('.faq-item').forEach(i => {
-    i.classList.remove('active');
-    i.querySelector('.faq-a').style.maxHeight = null;
-  });
-  
-  // Open clicked if wasn't active
-  if (!isActive) {
-    item.classList.add('active');
-    answer.style.maxHeight = answer.scrollHeight + 'px';
-  }
-}
-
-// Scroll reveal
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      // Open clicked if wasn't active
+      if (!isActive) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
     }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-// Form handler (placeholder)
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
-  btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M20 6L9 17l-5-5"/></svg> Request received — we\'ll call you shortly';
-  btn.style.background = '#1A8754';
-  btn.disabled = true;
-}
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Phone number format
-const phoneInput = document.getElementById('phone');
-if (phoneInput) {
-  phoneInput.addEventListener('input', function(e) {
-    let val = e.target.value.replace(/\D/g, '');
-    if (val.length > 0) {
-      if (val.length <= 3) val = '(' + val;
-      else if (val.length <= 6) val = '(' + val.slice(0,3) + ') ' + val.slice(3);
-      else val = '(' + val.slice(0,3) + ') ' + val.slice(3,6) + '-' + val.slice(6,10);
+    // Form handler (placeholder)
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn-submit');
+      btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M20 6L9 17l-5-5"/></svg> Request received — we\'ll call you shortly';
+      btn.style.background = '#1A8754';
+      btn.disabled = true;
     }
-    e.target.value = val;
-  });
-}
-</script>
+
+    // Phone number format
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) {
+      phoneInput.addEventListener('input', function (e) {
+        let val = e.target.value.replace(/\D/g, '');
+        if (val.length > 0) {
+          if (val.length <= 3) val = '(' + val;
+          else if (val.length <= 6) val = '(' + val.slice(0, 3) + ') ' + val.slice(3);
+          else val = '(' + val.slice(0, 3) + ') ' + val.slice(3, 6) + '-' + val.slice(6, 10);
+        }
+        e.target.value = val;
+      });
+    }
+  </script>
 
 </body>
+
 </html>
