@@ -58,7 +58,7 @@ o
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 80px;
+      scroll-padding-top: 120px;
     }
 
     body {
@@ -129,6 +129,7 @@ o
       color: var(--amf-gray-600);
       font-size: 1rem;
       font-weight: 500;
+      transition: opacity 0.3s ease;
     }
 
     .header-avail .pulse {
@@ -164,12 +165,18 @@ o
       border-radius: 8px;
       border: none;
       cursor: pointer;
-      transition: background var(--amf-transition);
+      transition: background var(--amf-transition), opacity 0.3s ease;
       text-decoration: none;
     }
 
     .btn-phone:hover {
       background: var(--amf-blue-hover);
+    }
+
+    body.call-bar-visible .header-avail,
+    body.call-bar-visible .btn-phone {
+      opacity: 0;
+      pointer-events: none;
     }
 
     .btn-phone svg {
@@ -1146,6 +1153,147 @@ o
       gap: 20px;
     }
 
+    /* ─── STICKY CALL BAR ─── */
+    .sticky-call-bar {
+      position: fixed;
+      top: 68px;
+      left: 0;
+      right: 0;
+      z-index: 98;
+      background: var(--amf-navy);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 0;
+      transform: translateY(-110%);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .sticky-call-bar.visible {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .sticky-call-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .sticky-call-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .sticky-call-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amf-blue);
+      color: var(--amf-white);
+      font-family: var(--amf-font);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 9px 20px;
+      border-radius: 8px;
+      white-space: nowrap;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: background var(--amf-transition);
+    }
+
+    .sticky-call-btn:hover {
+      background: var(--amf-blue-hover);
+    }
+
+    .sticky-call-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .sticky-call-mobile {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: var(--amf-blue);
+      color: var(--amf-white);
+      font-family: var(--amf-font);
+      font-size: 18px;
+      font-weight: 700;
+      padding: 18px 24px;
+      text-decoration: none;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .sticky-call-mobile.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .sticky-call-mobile svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    body.call-bar-visible {
+      padding-bottom: 72px;
+    }
+
+    /* ─── FORM PHONE CTA ─── */
+    .form-phone-cta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--amf-white);
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-bottom: 20px;
+      padding: 14px 20px;
+      background: rgba(27, 108, 181, 0.25);
+      border: 1px solid rgba(109, 179, 242, 0.3);
+      border-radius: var(--amf-radius);
+      transition: background var(--amf-transition);
+    }
+
+    .form-phone-cta:hover {
+      background: rgba(27, 108, 181, 0.4);
+      color: var(--amf-white);
+    }
+
+    .form-phone-cta svg {
+      width: 20px;
+      height: 20px;
+      color: #6DB3F2;
+      flex-shrink: 0;
+    }
+
+    /* ─── CTA SOCIAL PROOF ─── */
+    .cta-social-proof {
+      font-size: 0.9rem;
+      color: var(--amf-gray-400);
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    .hero .cta-social-proof {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
     /* ─── SCROLL ANIMATIONS ─── */
     .reveal {
       opacity: 0;
@@ -1270,6 +1418,14 @@ o
       .badge-item img {
         height: 52px;
       }
+
+      .sticky-call-bar {
+        display: none !important;
+      }
+
+      .sticky-call-mobile {
+        display: flex;
+      }
     }
   </style>
 </head>
@@ -1300,6 +1456,28 @@ o
     </div>
   </header>
 
+  <!-- ══════════════════ STICKY CALL BAR ══════════════════ -->
+  <div class="sticky-call-bar" id="sticky-call-bar">
+    <div class="container sticky-call-inner">
+      <span class="sticky-call-text">
+        <span class="pulse" style="width:7px;height:7px;background:#34D399;border-radius:50%;flex-shrink:0;display:inline-block;animation:pulse-dot 2s ease-in-out infinite;"></span>
+        Flight coordinators available 24/7 &middot; Response in 15 minutes
+      </span>
+      <a href="tel:855-440-1496" class="sticky-call-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        (855) 440-1496 — Call Now
+      </a>
+    </div>
+  </div>
+  <a href="tel:855-440-1496" class="sticky-call-mobile" id="sticky-call-mobile">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+    Call (855) 440-1496 — 24/7
+  </a>
+
   <!-- ══════════════════ HERO ══════════════════ -->
   <section class="hero">
     <div class="container">
@@ -1312,7 +1490,7 @@ o
             Hospital discharge transport specialists
           </div>
           <h1>The hospital says they can't fly commercial. <em>We'll get them home safely.</em></h1>
-          <p class="hero-sub">You have a tight discharge window and a patient who needs medical care throughout transport. We coordinate everything — hospital discharge handoff, insurance authorization, and bedside-to-bedside ICU-level care — so you can focus on your family.</p>
+          <p class="hero-sub">One call and our team handles everything — hospital coordination, insurance authorization, and bedside-to-bedside care. You focus on your family.</p>
           <div class="hero-ctas">
             <a href="tel:855-440-1496" class="btn-primary">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1322,15 +1500,9 @@ o
               </svg>
               Call now — 24/7 support
             </a>
-            <a href="#request-form" class="btn-secondary">
-              Request a flight
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" style="width:16px;height:16px">
-                <path d="M7 17l9.2-9.2M17 17V7H7" />
-              </svg>
-            </a>
           </div>
-          <div class="hero-proof">
+          <p class="cta-social-proof">Response in 15 minutes &middot; Available 24/7 &middot; 35,000+ families helped home</p>
+          <div class="hero-proof" style="margin-top:16px;">
             <div class="hero-stars">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -1353,7 +1525,7 @@ o
                   d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
             </div>
-            <p class="hero-proof-text"><strong>Highest-rated</strong> U.S. air ambulance &middot; 35,000+ families helped home</p>
+            <p class="hero-proof-text"><strong>Highest-rated</strong> U.S. air ambulance</p>
           </div>
         </div>
         <div class="hero-image">
@@ -1367,7 +1539,7 @@ o
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
             </div>
-            <p>NAAMTA-accredited &middot; Trusted by families &amp; hospital discharge teams nationwide</p>
+            <p>NAAMTA-accredited (the highest safety standard in air medical transport) &middot; Trusted by families &amp; hospital discharge teams nationwide</p>
           </div>
         </div>
       </div>
@@ -1665,6 +1837,7 @@ o
               Coordinate payment directly with the health plan — you don't manage the billing
             </li>
           </ul>
+          <p style="font-size:1rem;color:var(--amf-gray-800);margin-bottom:16px;">In most cases, we find coverage families didn't know they had.</p>
           <div class="insurance-highlight">
             <p>You're dealing with enough right now. We verify your coverage, handle the paperwork, and don't charge you to find out. One call is all it takes.</p>
           </div>
@@ -1674,8 +1847,10 @@ o
               <path
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
-            Check your coverage — (855) 440-1496
+            We'll verify your coverage in minutes — call (855) 440-1496
           </a>
+          <p class="cta-social-proof">Trusted by 35,000+ families &middot; Highest-rated U.S. air ambulance</p>
+          <a href="#request-form" style="display:block;margin-top:12px;font-size:1rem;color:var(--amf-blue);font-weight:500;">Or request a callback</a>
         </div>
         <div class="insurance-image">
           <img
@@ -1699,8 +1874,13 @@ o
       <div class="form-grid">
         <div class="form-left">
           <h2>Discharge is coming. We're ready when you are.</h2>
-          <p>Fill out the form and a flight coordinator will call you within 15 minutes. Or call us directly at
-            <a href="tel:855-440-1496" style="color:#6DB3F2;font-weight:600">(855) 440-1496</a>.</p>
+          <a href="tel:855-440-1496" class="form-phone-cta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Prefer to call? (855) 440-1496 — available 24/7
+          </a>
+          <p style="font-size:1rem;color:var(--amf-gray-400);line-height:1.6;margin-bottom:32px;">Or fill out the form below and a flight coordinator will call you within 15 minutes.</p>
           <ul class="form-reassurance">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1761,9 +1941,9 @@ o
               </div>
             </div>
             <div class="form-group">
-              <label for="diagnosis">Patient diagnosis / condition *</label>
-              <input type="text" id="diagnosis" name="diagnosis" required
-                placeholder="e.g. Post-surgical, stroke, cardiac event, spinal injury">
+              <label for="diagnosis">Patient's situation (optional)</label>
+              <input type="text" id="diagnosis" name="diagnosis"
+                placeholder="e.g. recovering from surgery, needs oxygen during transport">
             </div>
             <div class="form-group">
               <label for="details">Additional details (optional)</label>
@@ -1803,79 +1983,15 @@ o
         Medical expertise
       </div>
       <h2 class="section-title">We transport patients of all acuity levels</h2>
-      <p class="section-desc">From post-surgical recovery to complex critical care, our certified flight crews are equipped to manage a wide range of conditions throughout transport.</p>
-      <div class="conditions-wrap">
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      <p class="section-desc" style="max-width:640px;">From post-surgical recovery to complex critical care, our certified flight crews are equipped to manage a wide range of conditions. If your loved one can't fly commercially, call us — we'll tell you what's possible.</p>
+      <div style="margin-top:32px;">
+        <a href="tel:855-440-1496" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
-          Spinal cord injury
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path
-              d="M12 2a9 9 0 0 0-9 9c0 3.87 2.13 7.25 5.28 9.03L12 22l3.72-1.97A9.96 9.96 0 0 0 21 11a9 9 0 0 0-9-9z" />
-          </svg>
-          Traumatic brain injury
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-          </svg>
-          Stroke
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path
-              d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.78.77L12 20.65l7.65-7.65.77-.77a5.4 5.4 0 0 0 0-7.65z" />
-          </svg>
-          Cardiac
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <ellipse cx="12" cy="12" rx="3" ry="8" />
-            <ellipse cx="12" cy="12" rx="8" ry="3" />
-          </svg>
-          Pulmonary
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-          </svg>
-          Organ transplant
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M8 12h8M12 8v8" />
-          </svg>
-          Cancer
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-          </svg>
-          Eating disorders
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path
-              d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-          </svg>
-          Autism
-        </div>
-        <div class="condition-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M12 16v-4M12 8h.01" />
-          </svg>
-          General trauma
-        </div>
-        <div class="condition-pill"
-          style="background:var(--amf-blue-light);border-color:var(--amf-blue);color:var(--amf-blue)">
-          + many more conditions
-        </div>
+          Call (855) 440-1496
+        </a>
+        <p class="cta-social-proof" style="color:var(--amf-gray-400);">Trusted by 35,000+ families &middot; Highest-rated U.S. air ambulance</p>
       </div>
     </div>
   </section>
@@ -1965,17 +2081,17 @@ o
           <p>Our flight coordination team is standing by 24/7 — call now or request a callback.</p>
         </div>
         <div class="final-cta-btns">
-          <a href="tel:855-440-1496" class="btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" style="width:18px;height:18px">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            Call (855) 440-1496
-          </a>
-          <a href="#request-form" class="btn-outline">
-            Request a flight
-          </a>
+          <div>
+            <a href="tel:855-440-1496" class="btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" style="width:18px;height:18px">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Call (855) 440-1496
+            </a>
+            <p class="cta-social-proof">Trusted by 35,000+ families &middot; Highest-rated U.S. air ambulance</p>
+          </div>
         </div>
       </div>
     </div>
@@ -2033,6 +2149,19 @@ o
       btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M20 6L9 17l-5-5"/></svg> Request received — we\'ll call you shortly';
       btn.style.background = '#1A8754';
       btn.disabled = true;
+    }
+
+    // Sticky call bar — show after hero scrolls out
+    const hero = document.querySelector('.hero');
+    const stickyBar = document.getElementById('sticky-call-bar');
+    const stickyMobile = document.getElementById('sticky-call-mobile');
+    if (hero) {
+      new IntersectionObserver((entries) => {
+        const visible = !entries[0].isIntersecting;
+        stickyBar && stickyBar.classList.toggle('visible', visible);
+        stickyMobile && stickyMobile.classList.toggle('visible', visible);
+        document.body.classList.toggle('call-bar-visible', visible);
+      }, { threshold: 0 }).observe(hero);
     }
 
     // Phone number format
